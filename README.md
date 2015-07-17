@@ -1,6 +1,6 @@
 # Android-OttoSample
 
-This example shows how a Bus enhance communications between Activities, Services, UI Objects and others Process objects.
+This example shows how a Bus enhance communications between Activities, Services, UI Objects and other Process objects.
 
 Now our Activity has less responsibility as it no longer needs to be concerned with a list of listeners and is immediately decoupled from the interface.
 
