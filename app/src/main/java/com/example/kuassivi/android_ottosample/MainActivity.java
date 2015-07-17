@@ -31,16 +31,18 @@ import com.squareup.otto.Produce;
 import com.squareup.otto.Subscribe;
 
 /**
- * This example shows how a Bus enhance communications between Activity and others Process objects
+ * This example shows how a Bus enhance communications between Activities, Services, UI Objects
+ * and other Process objects
+ * <p>
  * Now our Activity has less responsibility as it no longer needs to be concerned
  * with a list of listeners and is immediately decoupled from the interface
  * <p>
- * One of the approach is to interact with our {@link DummyService}
- * without the need to bound it with our {@link MainActivity},
- * see {@link #interactWithService()} Producer
+ * One of the best approaches is to interact with our {@link DummyService}
+ * without the need to bound it into our {@link MainActivity},
+ * see the {@link #interactWithService()} Producer method
  * <p>
- * Another approach is to deal with our {@link DummyReceiver}
- * once it has receive a broadcast communication from any place
+ * Another one very interesting is to deal with our {@link DummyReceiver}
+ * once it has received a broadcast communication from any place
  */
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";
